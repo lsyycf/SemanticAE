@@ -4,4 +4,4 @@
 
 ## Code
 
-项目代码在整理中，如果有需要，请联系 wangjk@zgclab.edu.cn。
+The project code is being sorted out. If you need it, please contact wangjk@zgclab.edu.cn。
