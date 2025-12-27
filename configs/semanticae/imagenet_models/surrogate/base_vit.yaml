@@ -1,0 +1,5 @@
+models:
+    - "vit_b_16"
+fuse: True
+input_transformation:
+    type: "none"

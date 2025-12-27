@@ -1,0 +1,16 @@
+MODEL_URLS = {
+    'resnet50': 'https://download.pytorch.org/models/resnet50-19c8e357.pth',
+    'vgg19_bn': 'https://download.pytorch.org/models/vgg19_bn-c79401a0.pth',
+    'inception_v3': 'https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth',
+    'densenet121': 'https://download.pytorch.org/models/densenet121-a639ec97.pth',
+    'vit_b_16': 'https://download.pytorch.org/models/vit_b_16-c867db91.pth',
+    'resnet152': 'https://download.pytorch.org/models/resnet152-b121ed2d.pth',
+    'mobilenet_v2': 'https://download.pytorch.org/models/mobilenet_v2-b0353104.pth',
+    'senet154': 'http://data.lip6.fr/cadene/pretrainedmodels/senet154-c7b49a05.pth',
+    'resnext101': 'https://download.pytorch.org/models/resnext101_32x8d-8ba56ff5.pth',
+    'wrn101': 'https://download.pytorch.org/models/wide_resnet101_2-32ee1156.pth',
+    'pnasnet': 'http://data.lip6.fr/cadene/pretrainedmodels/pnasnet5large-bf079911.pth',
+    'mnasnet': 'https://download.pytorch.org/models/mnasnet1.0_top1_73.512-f206786ef8.pth',
+    'swin_b': 'https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22kto1k.pth',
+    'convnext_s': 'https://download.pytorch.org/models/convnext_small-0c510722.pth',
+}

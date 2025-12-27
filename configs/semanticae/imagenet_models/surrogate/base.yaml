@@ -1,0 +1,5 @@
+models:
+    - "resnet50"
+fuse: True
+input_transformation:
+    type: "none"

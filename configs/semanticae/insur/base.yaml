@@ -1,0 +1,35 @@
+
+task:
+    rerun: false
+    seed: 0
+    dev_run: false #
+    image_size: 128
+    n_samples_per_class: 6
+
+    surrogate_model: # resnet
+        "${yaml:${PATH_CONFIG}/semanticae/imagenet_models/surrogate/base.yaml}"
+
+
+
+
+attack:
+
+   # diffusion related
+    scale: 3.0
+    scale_edge: 0.3
+    timesteps: 100
+    ddim_eta: 0.0 # deterministic tested only
+
+    K: 4
+    s: 0.7
+    beta: 0.5
+    timestep_add_perturb: 0.75
+
+    budget_all: 3.0
+
+
+
+
+
+
+

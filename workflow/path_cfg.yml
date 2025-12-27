@@ -1,0 +1,2 @@
+dataset_dir: "./dataset"
+logs_dir: "./logs"

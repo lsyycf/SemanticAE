@@ -1,0 +1,5 @@
+models:
+    - "convnext_s"
+fuse: True
+input_transformation:
+    type: "none"

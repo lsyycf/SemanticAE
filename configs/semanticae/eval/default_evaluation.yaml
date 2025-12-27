@@ -1,0 +1,111 @@
+
+# Pytorch Lightning Params
+trainer:
+    precision: 32 # affects evaluated neural model
+    devices: 1 # also support multiple device
+    deterministic: true # use deterministic cuda algorithmic implementation for reproducibility
+
+macro: # macro evaluation metrics for referencing
+    accuracy_topk1: # reference to torchmetrics.Accuracy, https://lightning.ai/docs/torchmetrics/stable/classification/accuracy.html
+        task: "multiclass"
+        top_k: 1
+        num_classes: 1000
+
+evaluation:
+    dataset: # refer to
+        type: "imagenet"
+        batch_size: 32
+        label_start: 1
+        target_size: 128 # default size of generated images
+        anchor_images_path: None
+#        dist_anchor_images_path: ???
+
+
+    metrics: # metrics to be evaluated
+        attack_vit:
+            type: "cls_atk"
+            accuracy: ${macro.accuracy_topk1}
+            target_model:
+                models:
+                    - "vit_b_16"
+                fuse: True
+
+        attack_resnet:
+            type: "cls_atk"
+            accuracy: ${macro.accuracy_topk1}
+            target_model:
+                models:
+                    - "resnet50"
+                fuse: True
+
+        attack_convnext:
+            type: "cls_atk"
+            accuracy: ${macro.accuracy_topk1}
+            target_model:
+                models:
+                    - "convnext_s"
+                fuse: True
+
+        attack_inception:
+            type: "cls_atk"
+            accuracy: ${macro.accuracy_topk1}
+            target_model:
+                models:
+                    - "inception_v3"
+                fuse: True
+
+
+
+        attack_swin_b:
+            type: "cls_atk"
+            accuracy: ${macro.accuracy_topk1}
+            target_model:
+                models:
+                    - "swin_b"
+                fuse: True
+
+
+
+        attack_resnet152:
+            type: "cls_atk"
+            accuracy: ${macro.accuracy_topk1}
+            target_model:
+                models:
+                    - "resnet152"
+                fuse: True
+
+#       dict_keys(['cls_atk', 'LPIPS', 'MSSSIM', 'IS', 'FID', 'CLIPQuality', 'CLIPAnchorImage', 'CLIPOriginalImage'])
+
+        LPIPS:
+            type: "LPIPS"
+            normalize: true
+
+
+
+        MSSSIM:
+            type: "MSSSIM"
+
+
+        IS:
+            type: "IS"
+            normalize: true
+
+#        FID:
+#            type: "FID" # TODO: add dataset
+#            normalize: true
+
+        CLIPQuality:
+            type: "CLIPQuality"
+
+        CLIPNatural:
+            type: "CLIPQuality"
+            prompt: "natural"
+
+
+
+
+        CLIPSemanticBenignImage:
+            type: "CLIPSemanticBenignImage"
+
+        CLIPSemanticAdvImage:
+            type: "CLIPSemanticAdvImage"
