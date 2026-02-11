@@ -2,7 +2,8 @@
 
 This project contains the official implementation of the NeurIPS 2025 poster paper *Exploring Semantic-constrained Adversarial Example with Instruction Uncertainty Reduction*.
 
-Project Website: https://semanticae.github.io. The code of 3D generation is under working. We will conduct further extensions on our work.
+Project Website: https://semanticae.github.io.
+
 
 # Quick Start Guide
 1. Setup environment:
@@ -64,6 +65,8 @@ Our code references the following projects:
 * Diffusion Guided Adversarial Attacks: [SD-NAE](https://github.com/linyueqian/SD-NAE), [Adv-Diff](https://github.com/EricDai0/advdiff), [VENOM](https://github.com/huizhg/VENOM)
 * Benchmarks: [BlackboxBench](https://github.com/SCLBD/BlackboxBench), [TransferAttack](https://github.com/Trustworthy-AI-Group/TransferAttack)
 * The code in [sources_root/surrogate_models/models_blackboxbench](sources_root/surrogate_models/models_blackboxbench) is for evaluation purposes only and is licensed under CC BY-NC 4.0, see [LICENSE](sources_root/surrogate_models/models_blackboxbench/LICENSE).
+* The code for 3D adversarial example Demo is based on the [Trellis project](https://microsoft.github.io/TRELLIS/), under MIT License.
+
 # Citation
 
 ```
