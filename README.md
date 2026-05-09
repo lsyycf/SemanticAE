@@ -1,6 +1,6 @@
 # Overview
 
-This project contains the official implementation of the NeurIPS 2025 poster paper *Exploring Semantic-constrained Adversarial Example with Instruction Uncertainty Reduction*.
+This project contains the official implementation of the NeurIPS 2025 conference paper [*Exploring Semantic-constrained Adversarial Example with Instruction Uncertainty Reduction*](https://proceedings.neurips.cc/paper_files/paper/2025/hash/947b63838c90f1485188b9c673bc3a14-Abstract-Conference.html).
 
 Project Website: https://semanticae.github.io.
 
@@ -71,11 +71,15 @@ Our code references the following projects:
 
 ```
 @inproceedings{
-  hu2025exploring,
-  title={Exploring Semantic-constrained Adversarial  Example with Instruction Uncertainty Reduction},
-  author={Jin Hu and Jiakai Wang and Linna Jing and Haolin Li and Haodong Liu and Haotong Qin and Aishan Liu and Ke Xu and Xianglong Liu},
-  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
-  year={2025}
+   hu2025exploring,
+   title={Exploring Semantic-constrained Adversarial  Example with Instruction Uncertainty Reduction},
+   author={Jin Hu and Jiakai Wang and Linna Jing and Haolin Li and Haodong Liu and Haotong Qin and Aishan Liu and Ke Xu and Xianglong Liu},
+   booktitle = {Advances in Neural Information Processing Systems},
+   editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
+   pages = {102640--102692},
+   publisher = {Curran Associates, Inc.},
+   volume = {38},
+   year = {2025}
 }
 ```
 
